@@ -170,7 +170,7 @@ extension YPAssetViewContainer: UIGestureRecognizerDelegate {
         case .began:
             if isShown {
                 UIView.animate(withDuration: 0.1) {
-                    self.grid.alpha = 1
+                    self.grid.alpha = self.zoomableView?.isVideoMode ?? false ? 0 : 1
                 }
             }
         case .ended:
