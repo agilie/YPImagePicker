@@ -97,6 +97,7 @@ extension YPVideoView {
         }
         
         playerLayer.player = player
+        playerLayer.layoutSublayers()
         playerView.alpha = 1
     }
     
