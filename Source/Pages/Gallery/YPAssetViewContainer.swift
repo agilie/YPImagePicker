@@ -126,6 +126,7 @@ extension YPAssetViewContainer: YPAssetZoomableViewDelegate {
         let newFrame = zoomableView.assetImageView.convert(zoomableView.assetImageView.bounds, to: self)
         
         // update grid position
+        grid.alpha = zoomableView.isVideoMode ? 0 : 1
         grid.frame = frame.intersection(newFrame)
         grid.layoutIfNeeded()
         
