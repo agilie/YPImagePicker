@@ -26,7 +26,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
     
     public required init(items: [YPMediaItem]?) {
         super.init(nibName: nil, bundle: nil)
-        title = YPConfig.wordings.libraryTitle
+        //title = YPConfig.wordings.libraryTitle
     }
     
     public convenience init() {
